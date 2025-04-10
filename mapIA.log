@@ -1,0 +1,32 @@
+2025-04-10 14:53:42,114 - __main__ - WARNING - Modèle ou vectoriseur non trouvé. Ils seront créés lors du premier entraînement.
+2025-04-10 14:53:42,180 - werkzeug - INFO -  * Running on http://127.0.0.1:5006/ (Press CTRL+C to quit)
+2025-04-10 14:53:42,191 - werkzeug - INFO -  * Restarting with stat
+2025-04-10 14:53:48,028 - __main__ - WARNING - Modèle ou vectoriseur non trouvé. Ils seront créés lors du premier entraînement.
+2025-04-10 14:53:48,065 - werkzeug - WARNING -  * Debugger is active!
+2025-04-10 14:53:48,077 - werkzeug - INFO -  * Debugger PIN: 112-753-700
+2025-04-10 14:57:50,828 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:57:50] "[33mGET /model-stats HTTP/1.1[0m" 404 -
+2025-04-10 14:57:50,883 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:57:50] "[33mGET /model-stats HTTP/1.1[0m" 404 -
+2025-04-10 14:58:16,759 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:58:16] "[33mGET /model-stats HTTP/1.1[0m" 404 -
+2025-04-10 14:58:16,808 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:58:16] "[33mGET /model-stats HTTP/1.1[0m" 404 -
+2025-04-10 14:58:33,954 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:58:33] "OPTIONS /predict HTTP/1.1" 200 -
+2025-04-10 14:58:33,976 - werkzeug - INFO - 127.0.0.1 - - [10/Apr/2025 14:58:33] "[35m[1mPOST /predict HTTP/1.1[0m" 503 -
+2025-04-10 15:11:17,557 - mapIA - WARNING - Could not load models: [Errno 2] No such file or directory: 'model_cache/danger_zone_model.joblib'
+2025-04-10 15:11:17,567 - mapIA - INFO - Starting MapIA service
+2025-04-10 15:11:17,571 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-10 15:11:17,572 - werkzeug - INFO -  * Running on http://10.64.116.70:5006/ (Press CTRL+C to quit)
+2025-04-10 15:11:17,573 - werkzeug - INFO -  * Restarting with stat
+2025-04-10 15:11:25,743 - mapIA - WARNING - Could not load models: [Errno 2] No such file or directory: 'model_cache/danger_zone_model.joblib'
+2025-04-10 15:11:25,750 - mapIA - INFO - Starting MapIA service
+2025-04-10 15:11:25,752 - werkzeug - WARNING -  * Debugger is active!
+2025-04-10 15:11:25,763 - werkzeug - INFO -  * Debugger PIN: 112-071-584
+2025-04-10 15:13:18,338 - mapIA - WARNING - Could not load models: [Errno 2] No such file or directory: 'model_cache/danger_zone_model.joblib'
+2025-04-10 15:13:18,347 - mapIA - INFO - Starting MapIA service
+2025-04-10 15:13:18,353 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-10 15:13:18,355 - werkzeug - INFO -  * Running on http://10.64.116.70:5006/ (Press CTRL+C to quit)
+2025-04-10 15:13:18,356 - werkzeug - INFO -  * Restarting with stat
+2025-04-10 15:13:27,476 - mapIA - WARNING - Could not load models: [Errno 2] No such file or directory: 'model_cache/danger_zone_model.joblib'
+2025-04-10 15:13:27,483 - mapIA - INFO - Starting MapIA service
+2025-04-10 15:13:27,485 - werkzeug - WARNING -  * Debugger is active!
+2025-04-10 15:13:27,506 - werkzeug - INFO -  * Debugger PIN: 135-946-127
