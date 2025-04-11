@@ -1,35 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import joblib
-import numpy as np
-from sklearn.cluster import KMeans
 import pdfplumber
+import re  # Importer la bibliothèque de expressions régulières pour l'extraction
 
 app = Flask(__name__)
 CORS(app)
 
-# Charger le modèle existant
-activity_model = joblib.load('activity_model.joblib')  # Assurez-vous que ce fichier existe
-
-@app.route('/train', methods=['POST'])
-def train_model():
-    """
-    Entraîner le modèle KMeans ou autres avec de nouvelles données GPS.
-    """
-    gps_data = request.json.get('gps_data')  # Format attendu: liste de listes [[lat, lon], ...]
-    gps_data = np.array(gps_data)
-    
-    # Entraînez un nouveau modèle KMeans
-    kmeans = KMeans(n_clusters=5)
-    kmeans.fit(gps_data)
-    
-    joblib.dump(kmeans, 'clustering_model.joblib')  # Met à jour le modèle sauvegardé
-    return jsonify({'message': 'Model trained successfully'}), 200
-
 @app.route('/upload-pdf', methods=['POST'])
 def upload_pdf():
     """
-    Traiter le fichier PDF téléversé pour l'analyse de zone.
+    Traiter le fichier PDF téléversé pour l'analyse des zones à éviter.
     """
     if 'file' not in request.files:
         return jsonify({'error': 'No file provided'}), 400
@@ -53,13 +33,18 @@ def analyze_pdf_text(text):
     """
     Analyse du texte pour identifier des zones à éviter.
     """
-    keywords = ['danger', 'avoid', 'accident', 'crime', 'unsafe']  # Mots clés à rechercher
+    keywords = ['danger', 'avoid', 'accident', 'crime', 'unsafe']
     zones = []
-    
+
     for line in text.splitlines():
         for keyword in keywords:
             if keyword in line.lower():
-                zones.append(line)
+                # Utiliser une expression régulière pour extraire le nom de la zone
+                match = re.search(r'(\w+|\w+\s\w+) \s*(?:zone|quartier|ville)', line, re.I)
+                if match:
+                    zone_name = match.group(0).strip()
+                    zones.append({'name': zone_name, 'description': line})
+
     return zones
 
 if __name__ == '__main__':
