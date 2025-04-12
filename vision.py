@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pdfplumber
-import re  # Importer la bibliothèque de expressions régulières pour l'extraction
+import re
 
 app = Flask(__name__)
 CORS(app)
@@ -26,7 +26,7 @@ def extract_text_from_pdf(pdf_file):
     text = ""
     with pdfplumber.open(pdf_file) as pdf:
         for page in pdf.pages:
-            text += page.extract_text() + "\n"
+            text += page.extract_text() + "\n" if page.extract_text() else ""
     return text
 
 def analyze_pdf_text(text):
