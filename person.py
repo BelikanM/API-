@@ -109,7 +109,16 @@ def analyze():
     try:
         # Récupérer les données de l'image
         data = request.json
+        
+        # Vérifier si les champs requis sont présents
+        if 'image' not in data:
+            return jsonify({'error': 'Analyse payload invalide: \'image\''}), 400
+        
+        if 'location' not in data:
+            return jsonify({'error': 'Analyse payload invalide: \'location\''}), 400
+            
         image_data = data.get('image')
+        location = data.get('location')  # Maintenant on récupère la location
         
         # Décoder l'image base64
         image_bytes = base64.b64decode(image_data.split(',')[1])
@@ -128,6 +137,7 @@ def analyze():
         # Préparer la réponse
         response = {
             'timestamp': time.time(),
+            'location': location,  # Inclure la location dans la réponse
             'total_people': len(people_data),
             'people': people_data,
             'posture_summary': posture_counts

@@ -1,0 +1,82 @@
+2025-04-13 09:36:59,665 - api_analyzer - ERROR - Erreur lors du chargement des modèles: /usr/local/lib/python3.6/dist-packages/sklearn/__check_build/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0: cannot allocate memory in static TLS block
+___________________________________________________________________________
+Contents of /usr/local/lib/python3.6/dist-packages/sklearn/__check_build:
+_check_build.cpython-36m-aarch64-linux-gnu.sosetup.py                  __init__.py
+__pycache__
+___________________________________________________________________________
+It seems that scikit-learn has not been built correctly.
+
+If you have installed scikit-learn from source, please do not forget
+to build the package before using it: run `python setup.py install` or
+`make` in the source directory.
+
+If you have used an installer, please check that it is suited for your
+Python version, your operating system and your platform.
+2025-04-13 09:36:59,713 - api_analyzer - INFO - Haar cascade model loaded successfully
+2025-04-13 09:36:59,730 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-13 09:36:59,731 - werkzeug - INFO -  * Running on http://10.49.175.65:5007/ (Press CTRL+C to quit)
+2025-04-13 09:36:59,732 - werkzeug - INFO -  * Restarting with stat
+2025-04-13 09:37:06,483 - api_analyzer - ERROR - Erreur lors du chargement des modèles: /usr/local/lib/python3.6/dist-packages/sklearn/__check_build/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0: cannot allocate memory in static TLS block
+___________________________________________________________________________
+Contents of /usr/local/lib/python3.6/dist-packages/sklearn/__check_build:
+_check_build.cpython-36m-aarch64-linux-gnu.sosetup.py                  __init__.py
+__pycache__
+___________________________________________________________________________
+It seems that scikit-learn has not been built correctly.
+
+If you have installed scikit-learn from source, please do not forget
+to build the package before using it: run `python setup.py install` or
+`make` in the source directory.
+
+If you have used an installer, please check that it is suited for your
+Python version, your operating system and your platform.
+2025-04-13 09:37:06,531 - api_analyzer - INFO - Haar cascade model loaded successfully
+2025-04-13 09:37:06,543 - werkzeug - WARNING -  * Debugger is active!
+2025-04-13 09:37:08,983 - werkzeug - INFO -  * Debugger PIN: 186-390-391
+2025-04-13 09:39:33,353 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:39:33] "[33mOPTIONS /analyze HTTP/1.1[0m" 404 -
+2025-04-13 09:39:40,776 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:39:40] "[33mOPTIONS /analyze HTTP/1.1[0m" 404 -
+2025-04-13 09:39:42,102 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:39:42] "[33mOPTIONS /analyze HTTP/1.1[0m" 404 -
+2025-04-13 09:40:42,040 - api_analyzer - ERROR - Erreur lors du chargement des modèles: /usr/local/lib/python3.6/dist-packages/sklearn/__check_build/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0: cannot allocate memory in static TLS block
+___________________________________________________________________________
+Contents of /usr/local/lib/python3.6/dist-packages/sklearn/__check_build:
+_check_build.cpython-36m-aarch64-linux-gnu.sosetup.py                  __init__.py
+__pycache__
+___________________________________________________________________________
+It seems that scikit-learn has not been built correctly.
+
+If you have installed scikit-learn from source, please do not forget
+to build the package before using it: run `python setup.py install` or
+`make` in the source directory.
+
+If you have used an installer, please check that it is suited for your
+Python version, your operating system and your platform.
+2025-04-13 09:40:42,087 - api_analyzer - INFO - Haar cascade model loaded successfully
+2025-04-13 09:40:42,103 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-04-13 09:40:42,105 - werkzeug - INFO -  * Running on http://10.49.175.65:5007/ (Press CTRL+C to quit)
+2025-04-13 09:40:42,105 - werkzeug - INFO -  * Restarting with stat
+2025-04-13 09:40:49,408 - api_analyzer - ERROR - Erreur lors du chargement des modèles: /usr/local/lib/python3.6/dist-packages/sklearn/__check_build/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0: cannot allocate memory in static TLS block
+___________________________________________________________________________
+Contents of /usr/local/lib/python3.6/dist-packages/sklearn/__check_build:
+_check_build.cpython-36m-aarch64-linux-gnu.sosetup.py                  __init__.py
+__pycache__
+___________________________________________________________________________
+It seems that scikit-learn has not been built correctly.
+
+If you have installed scikit-learn from source, please do not forget
+to build the package before using it: run `python setup.py install` or
+`make` in the source directory.
+
+If you have used an installer, please check that it is suited for your
+Python version, your operating system and your platform.
+2025-04-13 09:40:49,447 - api_analyzer - INFO - Haar cascade model loaded successfully
+2025-04-13 09:40:49,458 - werkzeug - WARNING -  * Debugger is active!
+2025-04-13 09:40:49,482 - werkzeug - INFO -  * Debugger PIN: 423-324-994
+2025-04-13 09:41:57,882 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:57] "GET /api/status HTTP/1.1" 200 -
+2025-04-13 09:41:57,888 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:57] "GET /socket.io/?EIO=4&transport=polling&t=gh5fafbi HTTP/1.1" 200 -
+2025-04-13 09:41:57,896 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:57] "GET /socket.io/?EIO=4&transport=polling&t=gh5eljzy HTTP/1.1" 200 -
+2025-04-13 09:41:57,917 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:57] "GET /api/status HTTP/1.1" 200 -
+2025-04-13 09:41:58,028 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:58] "POST /socket.io/?EIO=4&transport=polling&t=gh5kagqg&sid=wyUc-SQKOPlwMSaBAAAB HTTP/1.1" 200 -
+2025-04-13 09:41:58,036 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:58] "GET /socket.io/?EIO=4&transport=polling&t=gh5kefno&sid=wyUc-SQKOPlwMSaBAAAB HTTP/1.1" 200 -
+2025-04-13 09:41:58,065 - werkzeug - INFO - 127.0.0.1 - - [13/Apr/2025 09:41:58] "GET /socket.io/?EIO=4&transport=polling&t=gh5lv4ya&sid=wyUc-SQKOPlwMSaBAAAB HTTP/1.1" 200 -
