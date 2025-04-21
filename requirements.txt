@@ -8,7 +8,7 @@ itsdangerous==2.2.0
 jinja2==3.1.6
 joblib==1.4.2
 MarkupSafe==2.1.5
-numpy==1.21.6
+numpy>=1.24
 Pillow==9.1.0
 scikit-learn==1.0.2
 scipy==1.10.1
